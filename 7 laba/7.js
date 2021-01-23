@@ -59,9 +59,8 @@ function del (id, row) {
 }
 
 function toggleButton (btn) {
-  return btn.off('click').toggleClass('fa-edit, fa-save');
+  return btn.off('click');
 }
-
 function edit (btn, id, fields) {
   toggleButton(btn);
   for (const i of fields) {
